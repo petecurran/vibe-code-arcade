@@ -1,0 +1,8 @@
+# Save points keep the games and the arcade notebook. Everything else in
+# this folder (the rules and settings) is left out.
+/*
+!/games/
+!/arcade/
+!/.gitignore
+.DS_Store
+Thumbs.db

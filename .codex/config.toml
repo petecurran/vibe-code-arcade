@@ -1,0 +1,15 @@
+# Vibe Code Arcade: keep Codex inside this folder. It can search the web,
+# but its commands stay offline unless a parent approves.
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+web_search = "live"
+
+# Save points (git commits) use the arcade's name, never a real person's.
+[shell_environment_policy.set]
+GIT_AUTHOR_NAME = "Vibe Code Arcade"
+GIT_AUTHOR_EMAIL = "arcade@localhost"
+GIT_COMMITTER_NAME = "Vibe Code Arcade"
+GIT_COMMITTER_EMAIL = "arcade@localhost"
+
+[sandbox_workspace_write]
+network_access = false

@@ -1,0 +1,36 @@
+{
+  "env": {
+    "GIT_AUTHOR_NAME": "Vibe Code Arcade",
+    "GIT_AUTHOR_EMAIL": "arcade@localhost",
+    "GIT_COMMITTER_NAME": "Vibe Code Arcade",
+    "GIT_COMMITTER_EMAIL": "arcade@localhost"
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "blockReadsOutsideWorkingDirectories": true,
+    "allow": [
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(sudo *)",
+      "Bash(su *)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~*)",
+      "Bash(git push*)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean*)",
+      "Bash(git rebase*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.config/**)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "network": {
+      "allowedDomains": []
+    }
+  }
+}
